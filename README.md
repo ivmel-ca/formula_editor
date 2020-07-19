@@ -1,4 +1,4 @@
-#Formula Editor
+# Formula Editor
 ## TODO:
 * Create an Editor where user can type in the text. It should be the case and space sensitive;
 * The created Editor should be able to handle math formulas (inserting, editing, deleting);
