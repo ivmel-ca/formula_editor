@@ -33,7 +33,6 @@ const styles = {
     },
     focused: {
         border: `2px solid ${active}`,
-        border: `1px solid ${inactiveBorder}`,
         width: '500px',
         margin: '0 auto',
         marginTop: '20px',
