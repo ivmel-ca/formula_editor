@@ -3,23 +3,11 @@ import './App.css';
 import EditorArea from './editorArea'
 
 const App = () => {
-  // const [editorValue, changeEditorValue] = useState(`<table>
-  // <tbody>
-  //   <tr>
-  //     <td style="border-bottom:solid 1px">144</td>
-  //     </tr>
-  //     <tr>
-  //       <td>2543453 - 44</td>
-  //     </tr>
-  // </tbody>
-  // </table>`);
-  const [editorValue, changeEditorValue] = useState(``)
-
-
+  const [editorValue, changeEditorValue] = useState('');
 
   useEffect(() => {
 
-    console.log('editorValue>>>', editorValue);
+    console.log('value>>>', editorValue);
 
   }, [editorValue])
 

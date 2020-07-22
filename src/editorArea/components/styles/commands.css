@@ -1,0 +1,45 @@
+.formula-editor__buttons-fraction {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  letter-spacing: 0.001em;
+  text-align: center;
+  /* border: 1px solid #ccc; */
+}
+.formula-editor__buttons-fraction > div {
+  display: block;
+  padding: 0.1em;
+  border-bottom: thin solid rgb(48, 48, 48);
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.formula-editor__buttons-fraction > div:last-child {
+  border: none;
+}
+
+.formula-editor__buttons-root {
+  position: relative;
+  display: inline-block;
+  /* border: 1px solid #ccc; */
+}
+
+.formula-editor__buttons-root::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 10px);
+  height: 0.5px;
+  top: 0;
+  left: 11px;
+  background-color: rgb(48, 48, 48);
+}
+
+.formula-editor__buttons-root::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: calc((100% - 23.5px)/2);
+  top: 0;
+  left: 10.5px;
+  background-color: black;
+}

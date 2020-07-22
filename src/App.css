@@ -36,31 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-
-.frac {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  letter-spacing: 0.001em;
-  text-align: center;
-
-  /* padding: 2px; */
-  /* border: 1px solid #ccc; */
-}
-.frac > div {
-  display: block;
-  padding: 0.1em;
-  border-bottom: thin solid black;
-  width: fit-content;
-  margin: 0 auto;
-}
-/* .frac span.bottom { */
-  /* border-top: thin solid black; */
-  /* width: fit-content;
-  margin: 0 auto;
-} */
-
-.frac > div:last-child{
-  border: none;
-}

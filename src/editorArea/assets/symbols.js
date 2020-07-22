@@ -277,10 +277,6 @@ const symbols = [
                 code: '&#183;'
             },
             {
-                name: 'square root',
-                code: '&#8730;'
-            },
-            {
                 name: 'partial differential',
                 code: '&#8706;'
             },
