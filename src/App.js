@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
 import './App.css';
+import EditorArea from './editorArea'
 
-function App() {
+const App = () => {
+  // const [editorValue, changeEditorValue] = useState(`<table>
+  // <tbody>
+  //   <tr>
+  //     <td style="border-bottom:solid 1px">144</td>
+  //     </tr>
+  //     <tr>
+  //       <td>2543453 - 44</td>
+  //     </tr>
+  // </tbody>
+  // </table>`);
+  const [editorValue, changeEditorValue] = useState(``)
+
+
+
+  useEffect(() => {
+
+    console.log('editorValue>>>', editorValue);
+
+  }, [editorValue])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <EditorArea
+      editorValue={editorValue}
+      onChange={event => changeEditorValue(event.target.value)}
+      placeholder={'Type here...'}
+    />
   );
-}
+};
 
 export default App;
