@@ -6,9 +6,7 @@ const App = () => {
   const [editorValue, changeEditorValue] = useState('');
 
   useEffect(() => {
-
     console.log('value>>>', editorValue);
-
   }, [editorValue])
 
   return (

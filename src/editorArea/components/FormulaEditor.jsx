@@ -14,7 +14,7 @@ import symbols from '../assets/symbols';
 import emojis from '../assets/emojis';
 import reducer, {initialState} from '../duck/formulaEditorReducer';
 import {changeFocusAction, getStyleAction, changeButtonStateAction, changeSymbolPopoverStateAction, changeEmojiPopoverStateAction } from '../duck/formulaEditorActionCreators';
-import { addCharacter, addSimpleStyle, changeToFormula } from '../duck/formulaEditorCommands';
+import { addCharacter, addSimpleStyle, changeToFormula, addFraction, addRootCharacter } from '../duck/formulaEditorCommands';
 
 const styles = {
     root: {
@@ -82,6 +82,8 @@ const FormulaEditor = ({editorValue, placeholder, error, onChange, onFocus = ide
                 <FormulaEditorButtonbar
                     addSimpleFormat = {addSimpleFormat}
                     addFormula = {changeToFormula}
+                    addFraction = {addFraction}
+                    addRoot = {addRootCharacter}
                     isItalic = {isItalic}
                     isSubscript = {isSubscript}
                     isSuperscript = {isSuperscript}
