@@ -55,8 +55,8 @@ const setCursorPosition = () => {
 /////// Fraction method ////////
 const fractionHTML =
     `&nbsp;<span class="formula-editor__buttons-fraction">
-        <div>1</div>
-        <div>2</div>
+        <div>x</div>
+        <div>y</div>
     </span>&nbsp;`;
 
 const addFraction = event => {
@@ -107,7 +107,7 @@ const addSimpleStyle = (event, style) => {
 
 const addRootCharacter = (event) => {
     event.preventDefault();
-    document.execCommand('insertHTML', true, `<span class="formula-editor__buttons-root">&#8730;</span>&nbsp;`);
+    document.execCommand('insertHTML', true, `<span class="formula-editor__buttons-root">&#8730;x</span>&nbsp;`);
 };
 
 const addCharacter = curry((character, event) => {
